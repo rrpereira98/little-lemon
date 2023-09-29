@@ -3,10 +3,10 @@ import Logo2 from "./assets/Logo2.png";
 function footer() {
   return (
     <footer>
-      <img src={Logo2} />
-      <div>
-        <p>Doormat Navigation</p>
-        <ul>
+      <img src={Logo2} id="footer-logo" />
+      <div id="links">
+        <p className="nav">Doormat Navigation</p>
+        <ul className="nav">
           <li>Home</li>
           <li>About</li>
           <li>Menu</li>
@@ -14,18 +14,16 @@ function footer() {
           <li>Order online</li>
           <li>Login</li>
         </ul>
-      </div>
-      <div>
-        <p>Contact</p>
-        <ul>
+
+        <p className="contact">Contact</p>
+        <ul className="contact">
           <li>58 fake address</li>
           <li>07000000</li>
           <li>fake_email@mail.com</li>
         </ul>
-      </div>
-      <div>
-        <p>Social Media Links</p>
-        <ul>
+
+        <p className="media">Social Media Links</p>
+        <ul className="media">
           <li>Facebook</li>
           <li>Instagram</li>
           <li>TikTok</li>

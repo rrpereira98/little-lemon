@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+h1 {
+  font-family: "Markazi Text", serif;
+  font-weight: 500;
+  font-size: 64px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-family: "Markazi Text", serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+Header {
+  margin: 0 12%;
+  display: flex;
+}
+
+Header button {
+  background-color: #fff;
+  border: none;
+  margin-left: auto;
+  width: 35px;
+}
+
+Nav ul {
+  margin: 0 12%;
+  padding: 0;
+  display: block;
+  list-style: none;
+  gap: 10px;
+}
+
+header nav svg {
+  height: 30px;
+  /* display: none; */
+}
+
+Main {
+  margin: 0 12%;
+  display: flex;
+}
+
+Footer {
+  margin: 0 12%;
+  display: grid;
+  grid-template-areas: "logo links";
+  grid-template-columns: 1fr 4fr;
+  gap: 5%;
+}
+
+#links {
+  display: grid;
+  grid-template-areas:
+    "nav contact media"
+    "nav-info contact-info media-info";
+  grid-template-rows: 0fr 1fr;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#links ul {
+  list-style: none;
+  padding: 0;
+}
+
+#links p.nav {
+  grid-area: nav;
+  align-self: self-end;
+}
+
+#links ul.nav {
+  grid-area: nav-info;
+  margin-top: -10px;
+}
+
+#links p.contact {
+  grid-area: contact;
+  align-self: self-end;
+}
+
+#links ul.contact {
+  grid-area: contact-info;
+  margin-top: -10px;
+}
+
+#links p.media {
+  grid-area: media;
+  align-self: self-end;
+}
+
+#links ul.media {
+  grid-area: media-info;
+  margin-top: -10px;
+}
+
+@media only screen and (max-width: 780px) {
+  /* Header nav ul {
+    display: none;
+  }
+
+  header nav svg {
+    display: block;
+  } */
+
+  Footer img {
+    display: none;
+  }
+
+  Footer p,
+  Footer li {
+    font-size: 12px;
+  }
+
+  Footer #links {
+    margin-left: auto;
+  }
 }
