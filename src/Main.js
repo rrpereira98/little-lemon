@@ -1,7 +1,11 @@
+import { Hero } from "./Hero";
+import { Specials } from "./Specials";
+
 function main() {
   return (
     <main>
-      <h1>Main</h1>
+      <Hero />
+      <Specials />
     </main>
   );
 }

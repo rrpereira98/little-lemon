@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ReactComponent as LogoSvg } from "./assets/Logo.svg";
 import { ReactComponent as BarsSvg } from "./assets/bars-solid.svg";
+import { ReactComponent as HamburgerMenu } from "./assets/icon _hamburger menu_.svg";
 
 import { Nav } from "./Nav";
 
@@ -12,9 +13,9 @@ function Header() {
   return (
     <>
       <header>
-        <LogoSvg />
+        <LogoSvg id="logo" />
         <button onClick={toggleUlVisibility}>
-          <BarsSvg />
+          <HamburgerMenu />
         </button>
       </header>
       {isUlVisible && <Nav />}

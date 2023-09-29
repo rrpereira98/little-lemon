@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-family: "Markazi Text", serif;
   font-weight: 500;
@@ -28,9 +33,23 @@ li {
   font-size: 16px;
 }
 
+button {
+  height: 65px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f4ce14;
+  font-family: "Karla", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* Header */
+
 Header {
   margin: 0 12%;
   display: flex;
+  padding: 35px 0;
 }
 
 Header button {
@@ -38,25 +57,86 @@ Header button {
   border: none;
   margin-left: auto;
   width: 35px;
+  height: 40px;
+}
+
+nav {
+  border-bottom: 9px double #495e57;
 }
 
 Nav ul {
   margin: 0 12%;
-  padding: 0;
+  padding: 0 0 35px 0;
   display: block;
   list-style: none;
   gap: 10px;
 }
 
-header nav svg {
-  height: 30px;
-  /* display: none; */
-}
+/* Main */
 
 Main {
+  background-color: #495e57;
+}
+
+div.hero {
+  margin: 0 12%;
+  padding: 80px 0;
+  height: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hero h1 {
+  color: #f4ce14;
+}
+
+.hero h2 {
+  margin-top: -25px;
+  color: #fff;
+}
+
+.hero p {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  color: #fff;
+  font-weight: 700;
+}
+
+div.hero img {
+  height: 460px;
+  width: 415px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  z-index: 2;
+}
+
+.specials {
+  background-color: #fff;
+  padding-top: 180px;
+}
+
+.specials .title-area {
   margin: 0 12%;
   display: flex;
+  justify-content: space-between;
 }
+
+.specials div.swiper-container {
+  margin: 0 12%;
+}
+
+div.dish-card {
+  height: 385px;
+  width: 310px;
+  background-color: antiquewhite;
+}
+
+/* Footer */
 
 Footer {
   margin: 0 12%;
