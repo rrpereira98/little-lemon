@@ -19,6 +19,7 @@ h3 {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  color: #f4ce14;
 }
 
 p {
@@ -118,10 +119,11 @@ div.hero img {
 .specials {
   background-color: #fff;
   padding-top: 180px;
+  margin-bottom: 120px;
 }
 
 .specials .title-area {
-  margin: 0 12%;
+  margin: 0 12% 55px 12%;
   display: flex;
   justify-content: space-between;
 }
@@ -130,10 +132,38 @@ div.hero img {
   margin: 0 12%;
 }
 
-div.dish-card {
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.dish-card {
   height: 385px;
   width: 310px;
-  background-color: antiquewhite;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #495e57;
+}
+
+.dish-card img {
+  height: 190px;
+  width: 310px;
+  object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.dish-card .title-area {
+  margin: 20px 5%;
+}
+
+.dish-card .price {
+  color: #ee9972;
+  font-weight: 500;
+}
+
+.dish-card .description {
+  margin: 0 5%;
+  color: #fff;
 }
 
 /* Footer */
@@ -192,14 +222,16 @@ Footer {
   margin-top: -10px;
 }
 
-@media only screen and (max-width: 780px) {
-  /* Header nav ul {
+@media only screen and (max-width: 935px) {
+  .hero img {
     display: none;
   }
+}
 
-  header nav svg {
-    display: block;
-  } */
+@media only screen and (max-width: 780px) {
+  .hero img {
+    display: none;
+  }
 
   Footer img {
     display: none;
@@ -212,5 +244,19 @@ Footer {
 
   Footer #links {
     margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .dish-card {
+    width: 100%;
+  }
+
+  .dish-card img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
 }
