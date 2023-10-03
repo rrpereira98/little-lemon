@@ -1,7 +1,7 @@
 import { Hero } from "./Hero";
 import { Specials } from "./Specials";
 
-function main() {
+function Main() {
   return (
     <main>
       <Hero />
@@ -10,4 +10,4 @@ function main() {
   );
 }
 
-export default main;
+export default Main;
